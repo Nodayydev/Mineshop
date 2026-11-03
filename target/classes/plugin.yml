@@ -1,0 +1,16 @@
+name: MineShop
+version: 1.0.0
+main: hu.mineshop.MineShopPlugin
+api-version: '26.3'
+softdepend: [Vault]
+libraries:
+  - org.xerial:sqlite-jdbc:3.50.3.0
+  - com.mysql:mysql-connector-j:9.3.0
+commands:
+  shop:
+    description: Megnyitja a kategóriás MineShopot
+    usage: /shop
+    aliases: [mineshop, ms]
+permissions:
+  mineshop.use:
+    default: true

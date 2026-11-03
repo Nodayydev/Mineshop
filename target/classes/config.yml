@@ -1,0 +1,24 @@
+menus:
+  categories-title: '&8Shop kategóriák'
+economy:
+  currency-symbol: '$'
+  sales-scale: 500.0
+  minimum-multiplier: 0.2
+  maximum-multiplier: 1.5
+  recovery-half-life-hours: 168.0
+economy-reset:
+  enabled: true
+  interval-months: 3
+storage:
+  # sqlite = helyi adatbázisfájl, mysql = távoli MySQL/MariaDB, yaml = régi sales.yml mód
+  type: sqlite
+  sqlite:
+    file: data/economy.db
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    database: mineshop
+    username: root
+    password: ''
+    use-ssl: false
+    table-prefix: mineshop_
